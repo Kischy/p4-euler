@@ -24,7 +24,7 @@ bool PalindromNumber::is_palindrom(unsigned long long number)
 
 	unsigned long long last_number = number % 10;
 
-	number /= last_number;
+	number /= 10;
 
 	if (number == last_number) return true;
 
