@@ -25,7 +25,6 @@ int main(int argc, char **argv)
 	}
 
 
-
 	std::cout << "The answer to the fouth problem of ProjectEuler.Net is " << p4_answ << ".\n";
 
 	return 0;
