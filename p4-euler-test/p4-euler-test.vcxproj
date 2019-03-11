@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8fae6af9-f74a-4e7f-8d62-05b2b0f76990}</ProjectGuid>
+    <ProjectGuid>{881a7371-92ff-484e-a732-bd87a8599c88}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <ConfigurationType>Application</ConfigurationType>
@@ -33,7 +33,11 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
-    <ClCompile Include="test.cpp" />
+    <ClInclude Include="..\p4-euler\src\PalindromNumber.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\p4-euler\src\PalindromNumber.cpp" />
+    <ClCompile Include="PalindromNumber-test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\p4-euler\p4-euler.vcxproj">
