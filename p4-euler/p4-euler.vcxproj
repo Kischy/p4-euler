@@ -115,7 +115,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>git commit -am "Succesful build at $([System.DateTime]::Now.ToString("yyyy-MM-dd  - HH:mm:ss"))"</Command>
+      <Command>git commit -am "Succesful build at $([System.DateTime]::Now.ToString("yyyy-MM-dd - HH:mm:ss"))"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
