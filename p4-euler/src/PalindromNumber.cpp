@@ -43,7 +43,7 @@ namespace //annonymous namespace
 		}
 		
 		digits.erase(digits.begin());
-		digits.erase(digits.end());
+		digits.pop_back();
 
 		is_vec_a_palindrom(digits);
 
