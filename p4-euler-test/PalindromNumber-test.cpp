@@ -52,9 +52,21 @@ TEST_F(PalindromNumberTester, SomeFourDigitNumbersAreNoPalindroms)
 }
 
 
-TEST_F(PalindromNumberTester, SomeFourDigiNumbersArePalindroms)
+TEST_F(PalindromNumberTester, SomeFourDigitNumbersArePalindroms)
 {
 	ASSERT_TRUE(palindrom.is_palindrom(9119));
+}
+
+
+TEST_F(PalindromNumberTester, SomeFifeDigitNumbersAreNoPalindroms)
+{
+	ASSERT_FALSE(palindrom.is_palindrom(99312));
+}
+
+
+TEST_F(PalindromNumberTester, SomeFifeDigitNumbersArePalindroms)
+{
+	ASSERT_TRUE(palindrom.is_palindrom(91319));
 }
 
 

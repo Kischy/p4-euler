@@ -5,7 +5,6 @@
 
 namespace //annonymous namespace
 {
-
 	unsigned long long get_number_of_digits(unsigned long long number)
 	{
 		return std::log10(number) + 1;
