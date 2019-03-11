@@ -12,9 +12,9 @@ int main(int argc, char **argv)
 
 	PalindromNumber palindrom;
 
-	for (unsigned long long i = 100; i <= 999; i++)
+	for (unsigned long long i = 100; i <= 999; ++i)
 	{
-		for (unsigned long long j = 100; j <= 999; j++)
+		for (unsigned long long j = 100; j <= 999; ++j)
 		{
 			if (palindrom.is_palindrom(i*j))
 			{
