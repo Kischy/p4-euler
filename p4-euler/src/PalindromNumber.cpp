@@ -16,6 +16,16 @@ namespace //annonymous namespace
 		return false;
 	}
 
+
+	unsigned long long powLL(unsigned long long number, unsigned long long exponent)
+	{
+		if (exponent == 1) return number;
+
+		return number * powLL(number, exponent - 1);
+	}
+
+
+
 }
 
 
@@ -39,10 +49,18 @@ bool PalindromNumber::is_palindrom(unsigned long long number)
 {
 	if (is_one_digit_number(number) == true) return true;
 	
+	unsigned long long number_of_digits = get_number_of_digits(number);
+	unsigned long long last_number, first_number;
 
 
+	for (unsigned long long i = number_of_digits; i >= number_of_digits/2; --i)
+	{
+		last_number = number % 10;
+		first_number = number % powLL(10LL, i);
+		
+	}
 
-	unsigned long long last_number = number % 10;
+
 
 	number /= 10;
 
