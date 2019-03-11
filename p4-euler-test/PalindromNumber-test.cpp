@@ -69,4 +69,9 @@ TEST_F(PalindromNumberTester, SomeFifeDigitNumbersArePalindroms)
 	ASSERT_TRUE(palindrom.is_palindrom(91319));
 }
 
+TEST_F(PalindromNumberTester, SomeSixDigitNumbersArePalindroms)
+{
+	ASSERT_TRUE(palindrom.is_palindrom(906609));
+}
+
 
