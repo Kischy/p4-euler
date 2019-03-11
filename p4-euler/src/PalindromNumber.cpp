@@ -50,7 +50,6 @@ namespace //annonymous namespace
 
 }
 
-
 class PalindromNumber::Impl
 {
 public:
@@ -58,10 +57,8 @@ public:
 private:
 };
 
-
 PalindromNumber::PalindromNumber() : pimpl(new Impl) {}
 PalindromNumber::~PalindromNumber() = default;
-
 
 
 //Member functions
