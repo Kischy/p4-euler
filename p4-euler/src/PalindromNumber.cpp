@@ -30,6 +30,25 @@ namespace //annonymous namespace
 		return digits;
 	}
 
+	bool is_vec_a_palindrom(std::vector<unsigned int> digits)
+	{
+		if (digits.size() <= 1)
+		{
+			return true;
+		}
+
+		if (digits.at(0) != digits.at(digits.size()))
+		{
+			return false;
+		}
+		
+		digits.erase(digits.begin());
+		digits.erase(digits.end());
+
+		is_vec_a_palindrom(digits);
+
+	}
+
 
 
 }
@@ -58,8 +77,6 @@ bool PalindromNumber::is_palindrom(unsigned long long number)
 	std::vector<unsigned int> digits = get_digits(number);
 
 
-	if (digits.at(0) == digits.at(1)) return true;
-
-	return false;
+	return is_vec_a_palindrom(digits);
 }
 
