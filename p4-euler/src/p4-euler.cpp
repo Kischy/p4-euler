@@ -3,6 +3,9 @@
 
 #include <iostream>
 
+#include "PalindromNumber.h"
+
+
 int main(int argc, char **argv)
 {
 	int p4_answ = 0;

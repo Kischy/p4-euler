@@ -1,10 +1,10 @@
 
-
 #include "gtest/gtest.h"
 
+#include "../p4-euler/src/PalindromNumber.h"
 
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+
+TEST(PalindromNumberClassExists, ClassExists) {
+	PalindromNumber palindromnumber;
 }
