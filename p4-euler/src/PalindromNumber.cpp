@@ -20,6 +20,8 @@ PalindromNumber::~PalindromNumber() = default;
 //Member functions
 bool PalindromNumber::is_palindrom(unsigned long long number)
 {
+	if (number < 10) return true;
+
 	unsigned long long last_number = number % 10;
 
 	number /= last_number;
