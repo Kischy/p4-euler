@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 
 	PalindromNumber palindrom;
 
-	palindrom.is_palindrom(333);
+	palindrom.is_palindrom(123);
 
 
 	std::cout << "The answer to the fouth problem of ProjectEuler.Net is " << p4_answ << ".\n";

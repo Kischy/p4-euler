@@ -35,3 +35,14 @@ TEST_F(PalindromNumberTester, SomeTwoDigiNumbersArePalindroms)
 }
 
 
+TEST_F(PalindromNumberTester, SomeThreeDigiNumbersArePalindroms)
+{
+	ASSERT_TRUE(palindrom.is_palindrom(313));
+}
+
+TEST_F(PalindromNumberTester, SomeThreeDigitNumbersAreNoPalindroms)
+{
+	ASSERT_FALSE(palindrom.is_palindrom(123));
+}
+
+
