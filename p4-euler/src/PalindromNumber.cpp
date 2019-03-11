@@ -37,7 +37,7 @@ namespace //annonymous namespace
 			return true;
 		}
 
-		if (digits.at(0) != digits.at(digits.size()))
+		if ( digits.at(0) != digits.at(digits.size()-1) )
 		{
 			return false;
 		}
