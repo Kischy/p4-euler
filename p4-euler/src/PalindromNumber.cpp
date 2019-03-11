@@ -30,7 +30,7 @@ namespace //annonymous namespace
 		return digits;
 	}
 
-	bool is_vec_a_palindrom(std::vector<unsigned int> digits)
+	bool is_vec_a_palindrom(std::vector<unsigned int> &digits)
 	{
 		if (digits.size() <= 1)
 		{
@@ -46,13 +46,9 @@ namespace //annonymous namespace
 		digits.pop_back();
 
 		is_vec_a_palindrom(digits);
-
 	}
 
-
-
 }
-
 
 
 class PalindromNumber::Impl
@@ -61,7 +57,6 @@ public:
 
 private:
 };
-
 
 
 PalindromNumber::PalindromNumber() : pimpl(new Impl) {}
