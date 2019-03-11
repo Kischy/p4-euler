@@ -52,7 +52,6 @@ namespace //annonymous namespace
 class PalindromNumber::Impl
 {
 public:
-
 private:
 };
 

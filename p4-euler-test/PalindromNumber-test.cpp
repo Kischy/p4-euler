@@ -54,7 +54,7 @@ TEST_F(PalindromNumberTester, SomeFourDigitNumbersAreNoPalindroms)
 
 TEST_F(PalindromNumberTester, SomeFourDigitNumbersArePalindroms)
 {
-	ASSERT_TRUE(palindrom.is_palindrom(9119));
+	ASSERT_TRUE(palindrom.is_palindrom(91 * 99));
 }
 
 
