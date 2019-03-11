@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 
 	PalindromNumber palindrom;
 
-	for (unsigned long long i = 997; i <= 999; ++i)
+	for (unsigned long long i = 900; i <= 999; ++i)
 	{
 		for (unsigned long long j = 100; j <= 999; ++j)
 		{
