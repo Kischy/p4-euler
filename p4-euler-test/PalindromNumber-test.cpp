@@ -46,3 +46,15 @@ TEST_F(PalindromNumberTester, SomeThreeDigitNumbersAreNoPalindroms)
 }
 
 
+TEST_F(PalindromNumberTester, SomeFourDigitNumbersAreNoPalindroms)
+{
+	ASSERT_FALSE(palindrom.is_palindrom(9931));
+}
+
+
+TEST_F(PalindromNumberTester, SomeFourDigiNumbersArePalindroms)
+{
+	ASSERT_FALSE(palindrom.is_palindrom(9119));
+}
+
+
