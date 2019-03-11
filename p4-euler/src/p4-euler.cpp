@@ -21,14 +21,9 @@ int main(int argc, char **argv)
 				if (i*j > p4_answ)
 				{
 					p4_answ = i * j;
-					break;
 				}
 				
 			}
-		}
-		if (p4_answ != 0)
-		{
-			break;
 		}
 
 	}
