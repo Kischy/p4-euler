@@ -20,6 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\p4-euler.cpp" />
+    <ClCompile Include="src\PalindromNumber.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\PalindromNumber.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
