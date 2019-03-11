@@ -50,7 +50,7 @@ bool PalindromNumber::is_palindrom(unsigned long long number)
 	if (is_one_digit_number(number) == true) return true;
 	
 	unsigned long long number_of_digits = get_number_of_digits(number);
-	unsigned long long last_number, first_number;
+	unsigned long long last_number = 0, first_number = 0;
 
 
 	for (unsigned long long i = number_of_digits; i >= number_of_digits/2; --i)
