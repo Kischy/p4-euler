@@ -26,7 +26,12 @@ TEST_F(PalindromNumberTester, SingleNumbersArePalindroms)
 
 TEST_F(PalindromNumberTester, TwoDigitNumbersRarlyPalindroms)
 {
-	ASSERT_FALSE(palindrom.is_palindrom(21));;;
+	ASSERT_FALSE(palindrom.is_palindrom(21));
+}
+
+TEST_F(PalindromNumberTester, SomeTwoDigiNumbersArePalindroms)
+{
+	ASSERT_TRUE(palindrom.is_palindrom(33));
 }
 
 

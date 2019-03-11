@@ -15,11 +15,17 @@ private:
 PalindromNumber::PalindromNumber() : pimpl(new Impl) {}
 PalindromNumber::~PalindromNumber() = default;
 
+
+
+//Member functions
 bool PalindromNumber::is_palindrom(unsigned long long number)
 {
+	unsigned long long last_number = number % 10;
 
-	if (number > 10) return false;
+	number /= last_number;
 
-	return true;
+	if (number == last_number) return true;
+
+	return false;
 }
 
