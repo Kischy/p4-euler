@@ -12,15 +12,18 @@ int main(int argc, char **argv)
 
 	PalindromNumber palindrom;
 
+	unsigned long long temp_num = 0;
+
 	for (unsigned long long i = 999; i >= 100; --i)
 	{
 		for (unsigned long long j = 999; j >= 100; --j)
 		{
-			if (palindrom.is_palindrom(i*j))
+			temp_num = i * j;
+			if (palindrom.is_palindrom(temp_num))
 			{
-				if (i*j > p4_answ)
+				if (temp_num > p4_answ)
 				{
-					p4_answ = i * j;
+					p4_answ = temp_num;
 				}
 				
 			}
