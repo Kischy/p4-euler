@@ -40,7 +40,7 @@ namespace //annonymous namespace
 		digits.erase(digits.begin());
 		digits.pop_back();
 
-		is_vec_a_palindrom(digits);
+		return is_vec_a_palindrom(digits);
 	}
 
 }
