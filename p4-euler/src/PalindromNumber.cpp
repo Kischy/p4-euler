@@ -5,14 +5,10 @@
 
 namespace //annonymous namespace
 {
-	unsigned long long get_number_of_digits(unsigned long long number)
-	{
-		return std::log10(number) + 1;
-	}
 
 	bool is_one_digit_number(unsigned long long number)
 	{
-		if (get_number_of_digits(number) == 1) return true;
+		if (number < 10) return true;
 		return false;
 	}
 
